@@ -23,6 +23,7 @@ module.exports = {
   entry: {
     'a': path.join(__dirname, './src/a.js'),
     'b': path.join(__dirname, './src/a.js'),
+    vendors: ['lodash']
   },
   output: {
     filename: '[name].[chunkhash:8].js',
@@ -32,11 +33,13 @@ module.exports = {
     fs: 'empty'
   },
   plugins: [
+    // 生成html模板
     new HtmlWebpackPlugin({
       filename: 'index.html',
       template: path.join(__dirname, './templates/index1.html'),
       chunks: ['a', 'b']
     }),
+    // 清理dist文件
     new CleanWebpackPlugin('dist')
   ],
   devServer: {
@@ -47,6 +50,12 @@ module.exports = {
     stats: "minimal",
     // 浏览器也显示错误
     overlay: true,
+    // 第二次编译不会出现编译信息
+    quiet: false,
+    // 使用inline模式的自动刷新和
+    inline:true,
+    hot:true,
+    // inline 模式完
     port: 6565
   }
 }
