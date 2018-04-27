@@ -3,22 +3,8 @@ const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin')
 
-
-/** 页面生成配置 **/
-const indexHtml = new HtmlWebpackPlugin({
-  title: 'bundle',
-  description: 'bundle',
-  filename: 'index.html',
-  template: path.join(__dirname, './templates/index'),
-  inject: true,
-  hash: false,
-  minify: {
-    removeComments: true, // 移除HTML中的注释
-    collapseWhitespace: true // 删除空白符与换行符
-  },
-  chunksSortMode: 'manual', // chunks排序-手动
-  chunks: ['a', 'vendor']
-})
+console.log(process.argv.join('').indexOf('dist'))
+console.log(process.env.NODE_ENV)
 
 module.exports = {
   entry: {
@@ -42,6 +28,12 @@ module.exports = {
     }),
     // Hot module replacement
     new webpack.HotModuleReplacementPlugin(),
+    // 定义全局变量
+    new new webpack.DefinePlugin({
+      'process.env': {
+        'NODE_ENV': JSON.stringify('development')
+      }
+    }),
     // 清理dist文件
     new CleanWebpackPlugin('dist')
   ],
