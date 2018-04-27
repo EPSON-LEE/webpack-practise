@@ -1,6 +1,7 @@
-let path = require('path')
-let HtmlWebpackPlugin = require('html-webpack-plugin');
-let CleanWebpackPlugin = require('clean-webpack-plugin')
+const path = require('path')
+const webpack = require('webpack')
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin')
 
 
 /** 页面生成配置 **/
@@ -39,6 +40,8 @@ module.exports = {
       template: path.join(__dirname, './templates/index1.html'),
       chunks: ['a', 'b']
     }),
+    // Hot module replacement
+    new webpack.HotModuleReplacementPlugin(),
     // 清理dist文件
     new CleanWebpackPlugin('dist')
   ],
