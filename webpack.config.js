@@ -13,11 +13,12 @@ module.exports = {
     vendors: ['lodash']
   },
   output: {
-    filename: '[name].[chunkhash:8].js',
+    filename: '[name].[hash].js',
     path: path.join(__dirname, 'dist')
   },
   node: {
-    fs: 'empty'
+    fs: 'empty',
+    module: 'empty'
   },
   plugins: [
     // 生成html模板
@@ -29,7 +30,7 @@ module.exports = {
     // Hot module replacement
     new webpack.HotModuleReplacementPlugin(),
     // 定义全局变量
-    new new webpack.DefinePlugin({
+    new webpack.DefinePlugin({
       'process.env': {
         'NODE_ENV': JSON.stringify('development')
       }

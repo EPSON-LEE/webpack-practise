@@ -11,3 +11,5 @@
 ![打印变量](showEnv.png)
 
 - 使用DefinePlugin
+
+DefinePlugin可以定义一个全局变量，
