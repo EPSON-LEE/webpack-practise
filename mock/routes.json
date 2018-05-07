@@ -1,0 +1,8 @@
+{
+    "/api/v0.1/articles": "/articles",
+    "/product?type=": "/product",
+    "/resource?resourceType=&resourceStatus=&productId=&resourceName=&pageNod=1&pageSize=50": "/resourceList",
+    "/api/v0.1/versions": "/versions",
+    "/products": "/products",
+    "/developPlan": "/developPlan"
+}

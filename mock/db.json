@@ -1,0 +1,174 @@
+{
+  "versions": [
+    {
+      "id": 1,
+      "status": "进行中",
+      "title": "版本计划1"
+    },
+    {
+      "id": 2,
+      "status": "进行中",
+      "title": "版本计划2"
+    },
+    {
+      "id": 3,
+      "status": "进行中",
+      "title": "版本计划3"
+    },
+    {
+      "id": 4,
+      "status": "进行中",
+      "title": "版本计划5"
+    }
+  ],
+  "products": {
+    "products": [
+      {
+        "productTypeId": "1",
+        "productTypeName": "一部",
+        "productList": [
+          {
+            "productName": "IM SOCIAL",
+            "productId": "1001"
+          }, {
+            "productName": "101PPT",
+            "productId": "1002"
+          }
+        ]
+      },
+      {
+        "productTypeId": "2",
+        "productTypeName": "二部",
+        "productList": [
+          {
+            "productName": "101PPT",
+            "productId": "1002"
+          },
+          {
+            "productName": "101PAD",
+            "productId": "1003"
+          },
+          {
+            "productName": "101",
+            "productId": "1004"
+          }
+        ]
+      },
+      {
+        "productTypeId": "3",
+        "productTypeName": "三部",
+        "productList": [
+          {
+            "productName": "教育平台",
+            "productId": "1005"
+          }
+        ]
+      }
+    ]
+  },
+  "resourceList": {
+      "total": "3",
+      "rows": [{
+        "resourceId": 1,
+        "name": "string",
+        "resourceType": 0,
+        "resourceStatus": 0,
+        "startDate": "2018-01-11T03:20:30.679Z",
+        "actualEndDate": "2018-01-11T03:20:30.679Z",
+        "erpProjectCode": "string",
+        "erpProjectName": "string",
+        "erpSubProjectCode": "string",
+        "erpSubProjectName": "string",
+        "expectedEndDate": "2018-01-11T03:20:30.679Z",
+        "productId": 0,
+        "productName": "string",
+        "t20Id": 0,
+        "t20Name": "string",
+        "featureTotalNumber": "15",
+        "featureCloseNumber": "15",
+        "taskTotalNumber": "10",
+        "taskCloseNumber": "10",
+        "usedWorkTime": "7"
+      },{
+        "resourceId": 2,
+        "name": "string",
+        "resourceType": 0,
+        "resourceStatus": 0,
+        "startDate": "2018-01-11T03:20:30.679Z",
+        "actualEndDate": "2018-01-11T03:20:30.679Z",
+        "erpProjectCode": "string",
+        "erpProjectName": "string",
+        "erpSubProjectCode": "string",
+        "erpSubProjectName": "string",
+        "expectedEndDate": "2018-01-11T03:20:30.679Z",
+        "productId": 0,
+        "productName": "string",
+        "t20Id": 0,
+        "t20Name": "string",
+        "featureTotalNumber": "15",
+        "featureCloseNumber": "15",
+        "taskTotalNumber": "10",
+        "taskCloseNumber": "10",
+        "usedWorkTime": "7"
+    } ,{
+      "resourceId": 3,
+      "name": "string",
+      "resourceType": 0,
+      "resourceStatus": 0,
+      "startDate": "2018-01-11T03:20:30.679Z",
+      "actualEndDate": "2018-01-11T03:20:30.679Z",
+      "erpProjectCode": "string",
+      "erpProjectName": "string",
+      "erpSubProjectCode": "string",
+      "erpSubProjectName": "string",
+      "expectedEndDate": "2018-01-11T03:20:30.679Z",
+      "productId": 0,
+      "productName": "string",
+      "t20Id": 0,
+      "t20Name": "string",
+      "featureTotalNumber": "15",
+      "featureCloseNumber": "15",
+      "taskTotalNumber": "10",
+      "taskCloseNumber": "10",
+      "usedWorkTime": "7"
+    }]
+  },
+  "developPlan": {
+    "total": 3,
+    "rows": [
+      {
+        "devPlanId": "1",
+        "productId": "0",
+        "name": "1",
+        "developmentDescription": "2312321322222222222222",
+        "planStartDate": 1516291200000,
+        "planEndDate": 1516291200000,
+        "actualCompletionDate": null,
+        "status": 0,
+        "personInCharge": "str2ing"
+      },
+      {
+        "devPlanId": "2",
+        "productId": "0",
+        "name": "2",
+        "developmentDescription": "2312321322222222222222",
+        "planStartDate": 1516291200000,
+        "planEndDate": 1516291200000,
+        "actualCompletionDate": null,
+        "status": 0,
+        "personInCharge": "str2ing"
+      },
+      {
+        "devPlanId": "3",
+        "productId": "0",
+        "name": "3",
+        "developmentDescription": "2312321322222222222222",
+        "planStartDate": 1516291200000,
+        "planEndDate": 1516291200000,
+        "actualCompletionDate": null,
+        "status": 0,
+        "personInCharge": "str2ing"
+      }
+    ]
+  }
+}
