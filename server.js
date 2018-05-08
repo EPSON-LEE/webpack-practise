@@ -3,18 +3,22 @@
 const express = require('express')
 const webpack = require('webpack')
 const rewriteJson = require('./mock/routes.json')
-const config = require('./webpack.route')
+const config = require('./webpack.config')
 
 let app = express()
 
+// web
 const compiler = webpack(config)
 
 // set static dir
 app.use(express.static(path.join(__dirname, '/')))
 
 app.use(require('webpack-dev-middleware')(compiler), {
-  npInfo: true,
-  publicPath: config.output.publicPath
+  noInfo: true,
+  publicPath: config.output.publicPath,
+  stats: {
+    color: true
+  }
 })
 
 app.use(require('webpack-hot-middleware')(compiler))

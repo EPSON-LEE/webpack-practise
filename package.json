@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "dist": "set NODE_ENV=production && webpack webpack.config.js --env=dist",
-    "start:dev": "webpack-dev-server --env=dev"
+    "start:dev": "webpack-dev-server --env=dev",
+    "dev": "node server.js --env=dev",
+    "dev:mock": "node server.js --env=dev --mock",
+    "mock": "json-server --watch ./mock/db.json --routes ./mock/routes.json --port 8080"
   },
   "author": "",
   "license": "ISC",
@@ -15,6 +18,7 @@
   },
   "devDependencies": {
     "clean-webpack-plugin": "^0.1.19",
+    "copyfiles": "^2.0.0",
     "express": "^4.16.3",
     "html-webpack-plugin": "^2.30.0",
     "json-server": "^0.12.2",
